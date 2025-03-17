@@ -75,8 +75,6 @@ public class EntidadeUserTest {
             .body("email", is("juca@email.com")) // Verificando se o email está correto
             .body("phone", is("999999999")) // Verificando se o telefone está correto
             .body("userStatus", is(1));  // Verificando se o status do usuário está correto
-
-                // Exibindo o conteúdo da resposta
    
 }
 
@@ -103,6 +101,7 @@ public class EntidadeUserTest {
                 .body("code", is(200)) // Verificando se o código da resposta é 200
                 .body("type", is("unknown")) // Verificando se o tipo da resposta é desconhecido
                 .body("message", equalTo(String.valueOf(id))); // Comparando dinamicamente com o ID do JSON
+                
 
 
 
